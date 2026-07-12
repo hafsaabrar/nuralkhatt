@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Collection</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Minimalist Navbar (Global Sync) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/NAKlogo.jpg" alt="Nur Al Khatt Logo" width="60" height="60" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto dynamic-nav-links">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Figma Style Charcoal Header Block -->
+    <section class="collection-banner-dark text-center">
+        <div class="container">
+            <h1 class="collection-title">Personalised Art</h1>
+            <p class="collection-desc">Your words, uniquely crafted into art.</p>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Product 1: Twilight Harmony (Out of Stock) -->
+                <div class="col-md-4 fade-in-up delay-1">
+                    <div class="minimal-art-card text-center">
+                        <div class="card-img-wrapper">
+                            <img src="images/customized1.jpg" alt="Twilight Harmony">
+                        </div>
+                        <h4 class="card-title-new">Twilight Harmony</h4>
+                        <p class="card-text-new">A beautiful fusion of customized calligraphy.</p>
+                        <p class="card-size-text">Size: 8×6</p>
+                        <span class="minimal-price">Rs. 1,400</span>
+                        <button onclick="sendOrder('Twilight Harmony', 'Rs. 1,400')" class="btn btn-outline-minimal w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Request Customization
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Golden Verse -->
+                <div class="col-md-4 fade-in-up delay-1">
+                    <div class="minimal-art-card text-center">
+                        <div class="card-img-wrapper">
+                            <img src="images/customized2.jpg" alt="Golden Verse">
+                        </div>
+                        <h4 class="card-title-new">Golden Verse</h4>
+                        <p class="card-text-new">Sacred verses illuminated in elegant gold.</p>
+                        <p class="card-size-text">Size: 18×24</p>
+                        <span class="minimal-price">Rs. 4,000</span>
+                        <button onclick="sendOrder('Golden Verse', 'Rs. 4,000')" class="btn btn-outline-minimal w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Request Customization
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Quadrant Faith -->
+                <div class="col-md-4 fade-in-up delay-1">
+                    <div class="minimal-art-card text-center">
+                        <div class="card-img-wrapper">
+                            <img src="images/customized3.jpg" alt="Quadrant Faith">
+                        </div>
+                        <h4 class="card-title-new">Quadrant Faith</h4>
+                        <p class="card-text-new">Four pillars of devotion, perfectly balanced.</p>
+                        <p class="card-size-text">Size: 11×16</p>
+                        <span class="minimal-price">Rs. 3,500</span>
+                        <button onclick="sendOrder('Quadrant Faith', 'Rs. 3,500')" class="btn btn-outline-minimal w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Request Customization
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4: Midnight Echoes -->
+                <div class="col-md-4 fade-in-up delay-2">
+                    <div class="minimal-art-card text-center">
+                        <div class="card-img-wrapper">
+                            <img src="images/customized4.jpg" alt="Midnight Echoes">
+                        </div>
+                        <h4 class="card-title-new">Midnight Echoes</h4>
+                        <p class="card-text-new">Glossy texture makes every stroke come to life.</p>
+                        <p class="card-size-text">Size: 8×11</p>
+                        <span class="minimal-price">Rs. 3,200</span>
+                        <button onclick="sendOrder('Midnight Echoes', 'Rs. 3,200')" class="btn btn-outline-minimal w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Request Customization
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5: Ethereal Aura -->
+                <div class="col-md-4 fade-in-up">
+                    <div class="minimal-art-card text-center">
+                        <div class="card-img-wrapper">
+                            <img src="images/customized5.jpg" alt="Ethereal Aura">
+                        </div>
+                        <h4 class="card-title-new">Ethereal Aura</h4>
+                        <p class="card-text-new">Modren abstraction meets timeless divine flow.</p>
+                        <p class="card-size-text">Size: 11×16</p>
+                        <span class="minimal-price">Rs. 3,800</span>
+                        <button onclick="sendOrder('Ethereal Aura', 'Rs. 3,800')" class="btn btn-outline-minimal w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Request Customization
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6: Artful Identity -->
+                <div class="col-md-4 fade-in-up">
+                    <div class="minimal-art-card text-center">
+                        <div class="card-img-wrapper">
+                            <img src="images/customized6.jpg" alt=" Artful Identity">
+                        </div>
+                        <h4 class="card-title-new"> Artful Identity</h4>
+                        <p class="card-text-new">A custom-designed tribute reflecting grace and style.</p>
+                        <p class="card-size-text">Size: 11×9</p>
+                        <span class="minimal-price">Rs. 1,500</span>
+                        <button onclick="sendOrder(' Artful Identity', 'Rs. 1,500')" class="btn btn-outline-minimal w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Request Customization
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7: Artful Identity -->
+                <div class="col-md-4 fade-in-up">
+                    <div class="minimal-art-card text-center">
+                        <div class="card-img-wrapper">
+                            <img src="images/customized7.jpg" alt=" Artful Identity">
+                        </div>
+                        <h4 class="card-title-new">Divine Art</h4>
+                        <p class="card-text-new">Graceful calligraphy tribute.</p>
+                        <p class="card-size-text">Size: 12×48</p>
+                        <span class="minimal-price">Rs. 5,500</span>
+                        <button onclick="sendOrder(' Artful Identity', 'Rs. 1,500')" class="btn btn-outline-minimal w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Request Customization
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-dark pt-5 pb-3 border-top fade-in-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/NAKlogo.jpg" alt="Nur Al Khatt Logo" width="80" height="80" class="logo-img mb-3">
+                    <p class="text-muted">Elevating spaces with the divine beauty of Arabic Calligraphy. Handmade art delivered with care.</p>
+                </div>
+               <div class="col-md-3 offset-md-1 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links-new">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#shop">Shop</a></li>
+                        <li><a href="shippingpolicy.html">Shipping Policy</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <p class="text-muted"><i class="fas fa-phone me-2"></i> +92 336 5566580</p>
+                    <div class="social-icons-new mt-3">
+                        <a href="https://www.instagram.com/bint_e_muslimah_?igsh=ejk5Y3R1NWpqYXNy" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://www.facebook.com/share/1B1PrWY7Le/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="https://www.tiktok.com/@nuralkhatt?_r=1&_t=ZN-96yreiW2e6I" target="_blank"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 Nur Al Khatt. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/923365566580" class="whatsapp-float-widget" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Scripts Logic Engine -->
+    <script src="js/script.js"></script>
+</body>
+</html>
