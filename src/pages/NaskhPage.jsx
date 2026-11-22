@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import WhatsAppWidget from '../components/WhatsAppWidget';
 
 export default function NaskhPage() {
-  // WhatsApp پر آرڈر بھیجنے کا فنکشن
   const sendOrder = (productName, price) => {
     const phoneNumber = "923365566580";
     const message = `Assalam-o-Alaikum! I would like to order:\n*Product:* ${productName}\n*Price:* ${price}`;
@@ -14,22 +13,21 @@ export default function NaskhPage() {
 
   return (
     <div>
-      <Navbar />
+      <div className="collection-seamless-header">
+        <Navbar />
 
-      {/* Figma Style Charcoal Header Block */}
-      <section className="collection-banner-dark text-center">
-        <div className="container">
-          <h1 className="collection-title">Khat-e-Naskh</h1>
-          <p className="collection-desc">The classic script of clarity and elegance.</p>
-        </div>
-      </section>
+        <section className="collection-banner-dark text-center">
+          <div className="container">
+            <h1 className="collection-title">Khat-e-Naskh</h1>
+            <p className="collection-desc">The classic script of clarity and elegance.</p>
+          </div>
+        </section>
+      </div>
 
-      {/* Product Grid Section */}
       <section className="py-5 bg-white">
         <div className="container">
           <div className="row g-5 justify-content-center">
             
-            {/* Product 1: Surah Al-Qadr (Out of Stock) */}
             <div className="col-md-4 fade-in-up">
               <div className="minimal-art-card text-center">
                 <div className="card-img-wrapper">
@@ -44,7 +42,6 @@ export default function NaskhPage() {
               </div>
             </div>
 
-            {/* Product 2: Surah Al Fatiha (Order Active) */}
             <div className="col-md-4 fade-in-up delay-1">
               <div className="minimal-art-card text-center">
                 <div className="card-img-wrapper">
@@ -62,7 +59,6 @@ export default function NaskhPage() {
               </div>
             </div>
 
-            {/* Product 3: Dua (Out of Stock) */}
             <div className="col-md-4 fade-in-up delay-1">
               <div className="minimal-art-card text-center">
                 <div className="card-img-wrapper">

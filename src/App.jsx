@@ -17,11 +17,14 @@ import ContactPage from './pages/ContactPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import ShippingPolicyPage from './pages/ShippingPolicyPage';
 import './App.css';
+
 function Home() {
   return (
     <div>
-      <Navbar />
-      <Hero />
+      <div className="seamless-hero-wrapper">
+        <Navbar />
+        <Hero />
+      </div>
       <ShopSection />
       <Footer />
       <WhatsAppWidget />

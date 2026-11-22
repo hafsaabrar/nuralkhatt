@@ -19,17 +19,17 @@ export default function PaintingsPage() {
 
   return (
     <div>
-      <Navbar />
+      <div className="collection-seamless-header">
+        <Navbar />
 
-      {/* Figma Style Charcoal Header Block */}
-      <section className="collection-banner-dark text-center">
-        <div className="container">
-          <h1 className="collection-title">Paintings</h1>
-          <p className="collection-desc">Where strokes of devotion meet the canvas.</p>
-        </div>
-      </section>
+        <section className="collection-banner-dark text-center">
+          <div className="container">
+            <h1 className="collection-title">Paintings</h1>
+            <p className="collection-desc">Where strokes of devotion meet the canvas.</p>
+          </div>
+        </section>
+      </div>
 
-      {/* Product Grid Section */}
       <section className="py-5 bg-white">
         <div className="container">
           <div className="row g-5">
