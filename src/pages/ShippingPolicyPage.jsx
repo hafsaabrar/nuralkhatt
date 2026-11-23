@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
-import logoImg from '../assets/NAKLogo.jpg';
 import WhatsAppWidget from '../components/WhatsAppWidget';
 
 export default function ShippingPolicyPage() {
