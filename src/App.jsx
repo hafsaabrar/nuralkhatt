@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
 
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
@@ -19,11 +20,11 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import ShippingPolicyPage from './pages/ShippingPolicyPage';
 import './App.css';
 
-function Home({ darkMode, setDarkMode }) {
+function Home() {
   return (
     <div>
       <div className="seamless-hero-wrapper">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Navbar />
         <Hero />
       </div>
       <ShopSection />
@@ -34,31 +35,23 @@ function Home({ darkMode, setDarkMode }) {
 }
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem('theme') === 'dark';
-  });
-
-  useEffect(() => {
-    const theme = darkMode ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }, [darkMode]);
-
   return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/naskh-page" element={<NaskhPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/thuluth-page" element={<ThuluthPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/kufic-page" element={<KuficPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/paintings" element={<PaintingsPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/customized" element={<CustomizedPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/about" element={<AboutPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/contact" element={<ContactPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/privacypolicy" element={<PrivacyPolicyPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-        <Route path="/shippingpolicy" element={<ShippingPolicyPage darkMode={darkMode} setDarkMode={setDarkMode} />} />
-      </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/naskh-page" element={<NaskhPage />} />
+          <Route path="/thuluth-page" element={<ThuluthPage />} />
+          <Route path="/kufic-page" element={<KuficPage />} />
+          <Route path="/paintings" element={<PaintingsPage />} />
+          <Route path="/customized" element={<CustomizedPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
+          <Route path="/shippingpolicy" element={<ShippingPolicyPage />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }

@@ -616,6 +616,61 @@ body {
     color: #cbd5e1 !important;
 }
 
+/* Dark Mode — Shipping & Policy Delivery Charges / Boxes / Tables */
+[data-theme="dark"] .policy-block,
+[data-theme="dark"] .shipping-box,
+[data-theme="dark"] .delivery-box,
+[data-theme="dark"] .charges-box,
+[data-theme="dark"] .card,
+[data-theme="dark"] .list-group-item,
+[data-theme="dark"] .table,
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table td,
+[data-theme="dark"] .table-light,
+[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .policy-block strong,
+[data-theme="dark"] .shipping-box strong,
+[data-theme="dark"] .delivery-box strong,
+[data-theme="dark"] .charges-box strong,
+[data-theme="dark"] .table th {
+    color: #93c5fd !important;
+}
+
+/* Dark Mode — Contact Form Card & Inputs */
+[data-theme="dark"] .contact-card,
+[data-theme="dark"] .contact-card.bg-white {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .contact-card .form-label,
+[data-theme="dark"] .contact-card .section-title {
+    color: #f8fafc !important;
+}
+
+[data-theme="dark"] .contact-card .form-control {
+    background-color: #0f172a !important;
+    border-color: #334155 !important;
+    color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .contact-card .form-control::placeholder {
+    color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .contact-card .form-control:focus {
+    background-color: #0f172a !important;
+    border-color: #93c5fd !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgba(147, 197, 253, 0.25) !important;
+}
+
 [data-theme="dark"] .dynamic-nav-links .nav-link {
     color: #e2e8f0 !important;
 }
