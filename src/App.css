@@ -754,11 +754,22 @@ body {
 
 [data-theme="dark"] .footer-description,
 [data-theme="dark"] .footer-links-new a,
+[data-theme="dark"] .footer-section-new p,
+[data-theme="dark"] .footer-section-new span,
+[data-theme="dark"] .footer-section-new i,
 [data-theme="dark"] .copyright-text {
-    color: #cbd5e1 !important;
+    color: #e2e8f0 !important;
 }
 
-[data-theme="dark"] .footer-links-new a:hover {
+[data-theme="dark"] .footer-section-new a[href^="tel"],
+[data-theme="dark"] .footer-section-new a[href^="https://wa.me"],
+[data-theme="dark"] .footer-section-new a[href^="mailto"] {
+    color: #93c5fd !important;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .footer-links-new a:hover,
+[data-theme="dark"] .footer-section-new a:hover {
     color: #ffffff !important;
 }
 
