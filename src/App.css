@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-
     background-attachment: fixed;
     color: #000000;
     overflow-x: hidden;
@@ -109,10 +108,11 @@ html {
 }
 
 .hero-text-content {
+    position: relative;
     max-width: 500px; 
     text-align: left;
     margin: 0;
-    z-index: 15;
+    z-index: 30;
 }
 
 .hero-heading {
@@ -133,9 +133,10 @@ html {
 
 .btn-shop-now {
     position: relative;
-    z-index: 20;
+    z-index: 50;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 14px 35px;
     background: linear-gradient(135deg, #1A3A6C 0%, #35607A 100%);
     color: #ffffff !important;
@@ -144,16 +145,26 @@ html {
     font-weight: 600;
     font-size: 1rem;
     box-shadow: 0 4px 15px rgba(26, 58, 108, 0.22);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    pointer-events: auto;
+    user-select: none;
 }
 
 .btn-shop-now:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(26, 58, 108, 0.32);
 }
 
 .btn-shop-now .arrow {
     margin-left: 10px;
+    pointer-events: none;
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+.btn-shop-now:hover .arrow {
+    transform: translateX(4px);
 }
 
 .hero-graphic-canvas {
@@ -164,6 +175,7 @@ html {
     width: 620px;
     height: 100%;
     z-index: 12;
+    pointer-events: none;
 }
 
 .hero-graphic-canvas::before {
@@ -175,6 +187,7 @@ html {
     height: 480px;
     background-color: #6B8E7A;
     border-radius: 46% 54% 40% 60% / 60% 40% 60% 40%;
+    pointer-events: none;
 }
 
 .hero-graphic-canvas::after {
@@ -186,6 +199,7 @@ html {
     height: 380px;
     background-color: #4A707A;
     border-radius: 54% 46% 63% 37% / 41% 61% 39% 59%;
+    pointer-events: none;
 }
 
 .collections-header-tag {
@@ -197,6 +211,7 @@ html {
     color: #ffffff;
     font-weight: 400;
     z-index: 14;
+    pointer-events: none;
 }
 
 .art-circle-frame {
@@ -207,6 +222,7 @@ html {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
     z-index: 15;
     transition: transform 0.3s ease;
+    pointer-events: none;
 }
 
 .art-circle-frame:hover {
@@ -217,6 +233,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .frame-top-left {
@@ -250,6 +267,7 @@ html {
     background-repeat: repeat-x;
     background-size: contain;
     z-index: 16;
+    pointer-events: none;
 }
 
 #shop {
@@ -581,12 +599,14 @@ html {
         width: 100%;
         max-width: 550px;
         height: 450px;
+        pointer-events: none;
     }
     .hero-graphic-canvas::before {
         width: 100%;
         height: 100%;
         right: 0;
         top: 0;
+        pointer-events: none;
     }
 }
             
