@@ -34,7 +34,7 @@ export default function Navbar() {
                 type="button"
                 className="theme-toggle-btn"
                 onClick={toggleDarkMode}
-                aria-label="Toggle dark mode"
+                aria-label="Toggle dark or light mode"
               >
                 {darkMode ? 'Light Mode' : 'Dark Mode'}
               </button>
