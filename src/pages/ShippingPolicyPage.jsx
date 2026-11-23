@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoImg from '../assets/NAKLogo.jpg';
 import Footer from '../components/Footer';
 import WhatsAppWidget from '../components/WhatsAppWidget';
 
@@ -9,7 +10,7 @@ export default function ShippingPolicyPage() {
       <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <img src="/images/NAKlogo.jpg" alt="Nur Al Khatt Logo" width="60" height="60" className="logo-img" />
+            <img src={logoImg} alt="Nur Al Khatt Logo" width="60" height="60" className="logo-img" />
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span className="navbar-toggler-icon"></span>
