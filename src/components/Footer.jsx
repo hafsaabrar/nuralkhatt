@@ -22,7 +22,16 @@ export default function Footer() {
           </div>
           <div className="col-md-4 mb-4">
             <h5 className="footer-heading-title fw-bold mb-3">Contact Us</h5>
-            <p className="text-muted"><i className="fas fa-phone me-2"></i> +92 336 5566580</p>
+            <p className="footer-contact-phone mb-0">
+              <a
+                href="https://wa.me/923365566580"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-phone-link"
+              >
+                <i className="fas fa-phone me-2"></i> +92 336 5566580
+              </a>
+            </p>
             <div className="social-icons-new mt-3">
               <a href="https://www.instagram.com/nuralkhatt_hafsa?dmpr=ejk5Y3R1NWpqYXNy" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram fa-lg"></i></a>
               <a href="https://www.facebook.com/share/1B1PrWY7Le/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook fa-lg"></i></a>
