@@ -24,7 +24,7 @@ export default function Footer() {
             <h5 className="footer-heading-title fw-bold mb-3">Contact Us</h5>
             <p className="text-muted"><i className="fas fa-phone me-2"></i> +92 336 5566580</p>
             <div className="social-icons-new mt-3">
-              <a href="https://www.instagram.com/bint_e_muslimah_?igsh=ejk5Y3R1NWpqYXNy" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="https://www.instagram.com/nuralkhatt_hafsa?dmpr=ejk5Y3R1NWpqYXNy" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram fa-lg"></i></a>
               <a href="https://www.facebook.com/share/1B1PrWY7Le/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook fa-lg"></i></a>
               <a href="https://www.tiktok.com/@nuralkhatt?_r=1&_t=ZN-96yreiW2e6I" target="_blank" rel="noreferrer"><i className="fa-brands fa-tiktok fa-lg"></i></a>
             </div>
