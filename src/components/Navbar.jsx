@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/NAKLogo.jpg';
 
-export default function Navbar() {
+export default function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container custom-nav-container">
@@ -26,6 +26,16 @@ export default function Navbar() {
             <li className="nav-item"><a className="nav-link" href="/#shop">Shop</a></li>
             <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+            <li className="nav-item">
+              <button
+                type="button"
+                className="theme-toggle-btn"
+                onClick={() => setDarkMode((prev) => !prev)}
+                aria-label="Toggle dark mode"
+              >
+                {darkMode ? 'Light Mode' : 'Dark Mode'}
+              </button>
+            </li>
           </ul>
         </div>
       </div>
