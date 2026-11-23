@@ -29,7 +29,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="footer-phone-link"
               >
-                <i className="fas fa-phone me-2"></i> +92 336 5566580
+                <i className="fa-brands fa-whatsapp me-2"></i>+92 336 5566580
               </a>
             </p>
             <div className="social-icons-new mt-3">
