@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
     background-attachment: fixed;
     color: #000000;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .container {
@@ -568,29 +570,17 @@ html {
     color: #ffffff;
 }
 
-/* Dark Mode Palette */
-[data-theme="dark"] body {
-    background-color: #0f172a;
-    color: #f1f5f9;
-}
-
-[data-theme="dark"] #shop {
-    background-color: #0b1120;
-    color: #f1f5f9;
-}
-
-[data-theme="dark"] #shop h1,
-[data-theme="dark"] #shop h2,
-[data-theme="dark"] #shop h3,
-[data-theme="dark"] #shop .section-title,
-[data-theme="dark"] #shop .shop-heading {
-    color: #f8fafc;
-}
-
-[data-theme="dark"] #shop p,
-[data-theme="dark"] #shop .section-subtitle,
-[data-theme="dark"] #shop .shop-subtitle {
-    color: #cbd5e1;
+/* Full Page & Section Dark Mode Palette */
+[data-theme="dark"] html,
+[data-theme="dark"] body,
+[data-theme="dark"] #root,
+[data-theme="dark"] main,
+[data-theme="dark"] section,
+[data-theme="dark"] #shop,
+[data-theme="dark"] .bg-white,
+[data-theme="dark"] .bg-light {
+    background-color: #0b1120 !important;
+    color: #f1f5f9 !important;
 }
 
 [data-theme="dark"] .seamless-hero-wrapper,
@@ -598,8 +588,22 @@ html {
     background:
         radial-gradient(circle at 12% 18%, rgba(107, 142, 122, 0.16) 0%, transparent 45%),
         radial-gradient(circle at 88% 25%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
-        linear-gradient(135deg, #0f172a 0%, #162238 55%, #111827 100%);
+        linear-gradient(135deg, #0f172a 0%, #162238 55%, #111827 100%) !important;
     box-shadow: none;
+}
+
+[data-theme="dark"] #shop h1,
+[data-theme="dark"] #shop h2,
+[data-theme="dark"] #shop h3,
+[data-theme="dark"] #shop .section-title,
+[data-theme="dark"] #shop .shop-heading {
+    color: #f8fafc !important;
+}
+
+[data-theme="dark"] #shop p,
+[data-theme="dark"] #shop .section-subtitle,
+[data-theme="dark"] #shop .shop-subtitle {
+    color: #cbd5e1 !important;
 }
 
 [data-theme="dark"] .dynamic-nav-links .nav-link {
@@ -650,7 +654,7 @@ html {
 }
 
 [data-theme="dark"] .minimal-art-card {
-    background-color: #1e293b;
+    background-color: #1e293b !important;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 }
 
