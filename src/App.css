@@ -43,9 +43,10 @@ body {
 }
 
 .custom-nav-container {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -63,14 +64,7 @@ body {
     flex-grow: 0 !important;
 }
 
-.navbar-nav {
-    flex-direction: row !important;
-    align-items: center;
-}
-
 .dynamic-nav-links {
-    display: flex !important;
-    align-items: center !important;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -834,6 +828,32 @@ body {
 }
             
 @media (max-width: 991px) { 
+    .navbar-collapse {
+        width: 100%;
+        flex-basis: 100%;
+        margin-top: 12px;
+        padding: 12px 18px;
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 10px 25px rgba(26, 58, 108, 0.08);
+    }
+    [data-theme="dark"] .navbar-collapse {
+        background-color: rgba(15, 23, 42, 0.95);
+        border: 1px solid #1e293b;
+    }
+    .dynamic-nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dynamic-nav-links .nav-link {
+        margin-left: 0;
+        padding: 8px 0;
+    }
+    .theme-toggle-btn {
+        margin-left: 0;
+        margin-right: 4px;
+    }
     .hero-section-new {
         height: auto;
         padding: 25px 0 50px 0;
@@ -868,8 +888,58 @@ body {
         top: 0;
         pointer-events: none;
     }
-    .theme-toggle-btn {
-        margin-left: 15px;
-        margin-top: 0;
+}
+
+@media (max-width: 575px) {
+    .logo-img {
+        height: 58px !important;
+        width: 58px !important;
+        max-height: 58px !important;
+        max-width: 58px !important;
+    }
+    .hero-heading {
+        font-size: 2.3rem;
+    }
+    .hero-subheading {
+        font-size: 0.95rem;
+    }
+    .hero-graphic-canvas {
+        height: 380px;
+    }
+    .collections-header-tag {
+        font-size: 1.6rem;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .frame-top-left {
+        width: 140px;
+        height: 140px; 
+        top: 100px; 
+        left: 5%;
+        right: auto; 
+    }
+    .frame-center-low { 
+        width: 130px;
+        height: 130px;
+        bottom: 20px;
+        left: 30%;
+        right: auto; 
+    }
+    .frame-main-right {
+        width: 160px;
+        height: 160px;
+        top: 120px;
+        right: 5%;
+    }
+    .whatsapp-float-widget {
+        width: 48px;
+        height: 48px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.4rem;
     }
 }
