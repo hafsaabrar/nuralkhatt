@@ -5,7 +5,7 @@ export default function Hero() {
     <header className="hero-section-new">
       <div className="container hero-container">
         
-        <div className="hero-text-content" data-aos="fade-up" data-aos-duration="1000">
+        <div className="hero-text-content" data-aos="fade-right" data-aos-duration="1000">
           <h1 className="hero-heading">Elevate Your <br />Home Decor</h1>
           <p className="hero-subheading" data-aos="fade-up" data-aos-delay="200">
             Transform your living space into a sanctuary of style
