@@ -28,7 +28,7 @@ export default function NaskhPage() {
         <div className="container">
           <div className="row g-5 justify-content-center">
             
-            <div className="col-md-4 fade-in-up">
+            <div className="col-md-4" data-aos="fade-up" data-aos-delay="0">
               <div className="minimal-art-card text-center">
                 <div className="card-img-wrapper">
                   <img src="/images/naskh1.jpg" alt="Surah Al-Qadr" />
@@ -42,7 +42,7 @@ export default function NaskhPage() {
               </div>
             </div>
 
-            <div className="col-md-4 fade-in-up delay-1">
+            <div className="col-md-4" data-aos="fade-up" data-aos-delay="120">
               <div className="minimal-art-card text-center">
                 <div className="card-img-wrapper">
                   <img src="/images/naskh-art.jpg" alt="Surah Al Fatiha" />
@@ -59,7 +59,7 @@ export default function NaskhPage() {
               </div>
             </div>
 
-            <div className="col-md-4 fade-in-up delay-1">
+            <div className="col-md-4" data-aos="fade-up" data-aos-delay="240">
               <div className="minimal-art-card text-center">
                 <div className="card-img-wrapper">
                   <img src="/images/naskh2.jpg" alt="Dua" />

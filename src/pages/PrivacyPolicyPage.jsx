@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
       <section className="py-5">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-8 contact-card p-5 shadow-sm fade-in-up bg-white rounded">
+            <div className="col-md-8 contact-card p-5 shadow-sm bg-white rounded" data-aos="fade-up" data-aos-delay="100">
               <h2 className="text-center mb-2">Privacy Policy</h2>
               <div className="title-underline"></div>
 
@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
                 <p>Hum sirf wahi maloomat mangte hain jo order delivery ke liye zaroori hoti hain (Jaise ke Name, Phone Number, aur Delivery Address).</p>
 
                 <h5 className="fw-bold mt-4">2. Data Usage</h5>
-                <p>Aapka data sirf order confirmation aur delivery ke liye istemal kiya جاتا hai. Hum aapki kisi bhi maloomat ko kisi teesray party (Third-party) ko farokht nahi karte.</p>
+                <p>Aapka data sirf order confirmation aur delivery ke liye istemal kiya jata hai. Hum aapki kisi bhi maloomat ko kisi teesray party (Third-party) ko farokht nahi karte.</p>
 
                 <h5 className="fw-bold mt-4">3. Security</h5>
                 <p>Aapki di gayi maloomat hamare paas mehfooz rehti hain. Hum digital aur manual dono tareeqon se aapke data ki hifazat yaqeeni banate hain.</p>

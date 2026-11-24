@@ -26,11 +26,11 @@ export default function ShippingPolicyPage() {
       <section className="py-5 bg-white">
         <div className="container">
           <div className="row">
-            <div className="col-md-9 col-lg-8 mx-auto fade-in-up delay-1">
+            <div className="col-md-9 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">
               
               <h1 className="policy-main-title">Shipping Policy</h1>
               
-              <div className="policy-block">
+              <div className="policy-block" data-aos="fade-up" data-aos-delay="150">
                 <h4 className="policy-heading"><i className="fas fa-box-open me-2 text-dark"></i> Delivery Charges</h4>
                 <ul className="list-group list-group-flush policy-list">
                   <li className="list-group-item bg-transparent px-0 border-0">
@@ -42,12 +42,12 @@ export default function ShippingPolicyPage() {
                 </ul>
               </div>
 
-              <div className="policy-block mt-4">
+              <div className="policy-block mt-4" data-aos="fade-up" data-aos-delay="220">
                 <h4 className="policy-heading"><i className="fas fa-info-circle me-2 text-dark"></i> Order Tracking</h4>
                 <p className="policy-text">Order dispatch hone ke baad aapko WhatsApp ke zariye update kar diya jayega. Agar delivery late ho, toh aap humse direct rabta kar sakte hain.</p>
               </div>
               
-              <div className="text-start mt-5">
+              <div className="text-start mt-5" data-aos="fade-up" data-aos-delay="280">
                 <a href="/#shop" className="btn btn-outline-minimal">Back to Shop</a>
               </div>
 

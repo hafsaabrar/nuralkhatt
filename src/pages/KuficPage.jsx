@@ -34,8 +34,13 @@ export default function KuficPage() {
       <section className="py-5 bg-white">
         <div className="container">
           <div className="row g-5">
-            {products.map((item) => (
-              <div className="col-md-4 fade-in-up" key={item.id}>
+            {products.map((item, index) => (
+              <div
+                className="col-md-4"
+                key={item.id}
+                data-aos="fade-up"
+                data-aos-delay={(index % 3) * 120}
+              >
                 <div className="minimal-art-card text-center">
                   <div className="card-img-wrapper">
                     <img src={item.img} alt={item.title} />

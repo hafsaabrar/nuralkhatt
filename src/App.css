@@ -103,11 +103,28 @@ body {
     transition: color 0.2s ease;
     text-decoration: none;
     white-space: nowrap;
+    position: relative;
+}
+
+.dynamic-nav-links .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background-color: #1A3A6C;
+    transition: width 0.3s ease;
 }
 
 .dynamic-nav-links .nav-link:hover,
 .dynamic-nav-links .nav-link.active {
     color: #1A3A6C !important;
+}
+
+.dynamic-nav-links .nav-link:hover::after,
+.dynamic-nav-links .nav-link.active::after {
+    width: 100%;
 }
 
 .hero-section-new {
@@ -257,11 +274,21 @@ body {
     pointer-events: none;
 }
 
+@keyframes luxuryFloat {
+    0%, 100% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -10px;
+    }
+}
+
 .frame-top-left {
     width: 195px;
     height: 195px;
     top: 140px;
     right: 330px;
+    animation: luxuryFloat 5.5s ease-in-out infinite;
 }
 
 .frame-center-low {
@@ -269,6 +296,7 @@ body {
     height: 180px;
     bottom: 40px;
     right: 185px;
+    animation: luxuryFloat 6.5s ease-in-out 0.8s infinite;
 }
 
 .frame-main-right {
@@ -276,6 +304,7 @@ body {
     height: 225px;
     top: 165px;
     right: 30px;
+    animation: luxuryFloat 6s ease-in-out 1.5s infinite;
 }
 
 .hero-greek-border {
@@ -305,12 +334,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.25s ease;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
 .minimal-art-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 18px 38px rgba(26, 58, 108, 0.12);
 }
 
 .card-img-wrapper {
@@ -326,11 +356,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .minimal-art-card:hover .card-img-wrapper img {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 .card-title-new {
@@ -383,6 +413,16 @@ body {
     color: #ffffff !important;
 }
 
+.btn-outline-minimal .arrow {
+    display: inline-block;
+    margin-left: 6px;
+    transition: transform 0.3s ease;
+}
+
+.btn-outline-minimal:hover .arrow {
+    transform: translateX(5px);
+}
+
 .btn-minimal-disabled {
     border: 1px solid #ccc;
     background-color: #f8f9fa;
@@ -417,6 +457,28 @@ body {
     margin-bottom: 0;
 }
 
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .collection-title {
     font-family: 'Playfair Display', serif;
     font-size: 3.1rem;
@@ -424,6 +486,7 @@ body {
     color: #1A3A6C;
     margin-bottom: 12px;
     letter-spacing: 0.4px;
+    animation: fadeSlideDown 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .collection-desc {
@@ -432,6 +495,7 @@ body {
     font-weight: 500;
     max-width: 620px;
     margin: 0 auto;
+    animation: fadeSlideUp 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
 }
 
 .about-main-title, .policy-main-title {
@@ -604,7 +668,6 @@ body {
     border-color: rgba(26, 58, 108, 0.6);
     transform: rotate(12deg) scale(1.04);
 }
-
 [data-theme="dark"] html,
 [data-theme="dark"] body,
 [data-theme="dark"] #root,
@@ -707,6 +770,10 @@ body {
     color: #e2e8f0 !important;
 }
 
+[data-theme="dark"] .dynamic-nav-links .nav-link::after {
+    background-color: #93c5fd;
+}
+
 [data-theme="dark"] .dynamic-nav-links .nav-link:hover,
 [data-theme="dark"] .dynamic-nav-links .nav-link.active {
     color: #93c5fd !important;
@@ -754,6 +821,10 @@ body {
 [data-theme="dark"] .minimal-art-card {
     background-color: #1e293b !important;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .minimal-art-card:hover {
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.55) !important;
 }
 
 [data-theme="dark"] .card-title-new,

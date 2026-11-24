@@ -4,14 +4,14 @@ import logoImg from '../assets/NAKLogo.jpg';
 
 export default function Footer() {
   return (
-    <footer className="footer-section-new bg-white text-dark pt-5 pb-3 border-top fade-in-up">
+    <footer className="footer-section-new bg-white text-dark pt-5 pb-3 border-top">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="0">
             <img src={logoImg} alt="Nur Al Khatt Logo" width="80" height="80" className="logo-img mb-3" />
             <p className="footer-description text-muted">Elevating spaces with the divine beauty of Arabic Calligraphy. Handmade art delivered with care.</p>
           </div>
-          <div className="col-md-3 offset-md-1 mb-4">
+          <div className="col-md-3 offset-md-1 mb-4" data-aos="fade-up" data-aos-delay="120">
             <h5 className="footer-heading-title fw-bold mb-3">Quick Links</h5>
             <ul className="list-unstyled footer-links-new">
               <li><Link to="/">Home</Link></li>
@@ -20,7 +20,7 @@ export default function Footer() {
               <li><Link to="/privacypolicy">Privacy Policy</Link></li>
             </ul>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="240">
             <h5 className="footer-heading-title fw-bold mb-3">Contact Us</h5>
             <p className="footer-contact-phone mb-0">
               <a

@@ -29,7 +29,7 @@ export default function ContactPage() {
       <section className="py-5">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-6 fade-in-up">
+            <div className="col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div className="contact-card p-4 shadow-lg bg-white rounded">
                 <h2 className="section-title text-center mb-4">Contact For Orders</h2>
                 <form onSubmit={handleSubmit}>

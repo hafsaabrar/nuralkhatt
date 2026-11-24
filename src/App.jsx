@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
@@ -35,6 +37,15 @@ function Home() {
 }
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Smooth 1-second luxury animation
+      easing: 'ease-out-cubic', // Rich & soft deceleration
+      once: true, // Ek baar scroll par animate ho (bar bar flicker na kare)
+      offset: 80, // Screen mein 80px aane par start ho
+    });
+  }, []);
+
   return (
     <ThemeProvider>
       <Router>
